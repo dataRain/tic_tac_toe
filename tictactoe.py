@@ -167,10 +167,9 @@ def check_winner(posdict,pdict):
 		return pdict[1]
 
 def play_again():
-	play_again = ["y","n"]
 	check = raw_input("Do you want to play again? (y/n): ")
 
-	if check not in play_again:
+	if check not in ["y","n"]:
 		print "Please choose y or n"
 		play_again()
 	else:
